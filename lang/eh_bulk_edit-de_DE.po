@@ -1,0 +1,1433 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ELEX Bulk Edit Products, Prices & Attributes for "
+"Woocommerce\n"
+"POT-Creation-Date: 2019-02-19 19:57+0530\n"
+"PO-Revision-Date: 2019-02-19 20:06+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: eh-bulk-edit-products.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: eh-bulk-edit-products.php:99
+msgid "Bulk Edit Products"
+msgstr "Schüttgutbearbeitung"
+
+#: eh-bulk-edit-products.php:100
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: eh-bulk-edit-products.php:101
+msgid "Support"
+msgstr "Support"
+
+#: includes/ajax-apifunctions.php:1463
+msgid "Undo the Update - Overview"
+msgstr "Update rückgängig machen-Übersicht"
+
+#: includes/ajax-apifunctions.php:1482
+#: templates/template-frontend-tables.php:71
+msgid "Title"
+msgstr "Titel"
+
+#: includes/ajax-apifunctions.php:1485
+#: templates/template-frontend-tables.php:74
+msgid "Select a condition to edit the title, and enter the relevant text"
+msgstr ""
+"Wählen Sie eine Bedingung, um den Titel zu bearbeiten, und geben Sie den "
+"entsprechenden Text ein."
+
+#: includes/ajax-apifunctions.php:1492 includes/ajax-apifunctions.php:1577
+#: includes/ajax-apifunctions.php:1663 includes/ajax-apifunctions.php:1717
+#: includes/ajax-apifunctions.php:1765 includes/ajax-apifunctions.php:1865
+#: includes/ajax-apifunctions.php:1972 includes/ajax-apifunctions.php:2016
+#: includes/ajax-apifunctions.php:2079 includes/ajax-apifunctions.php:2128
+#: includes/ajax-apifunctions.php:2184 includes/ajax-apifunctions.php:2248
+#: includes/ajax-apifunctions.php:2311 includes/ajax-apifunctions.php:2375
+#: includes/ajax-apifunctions.php:2450 includes/ajax-apifunctions.php:2512
+#: includes/ajax-apifunctions.php:2573 includes/ajax-apifunctions.php:2662
+#: includes/ajax-apifunctions.php:2722 includes/ajax-apifunctions.php:2814
+msgid "No Change"
+msgstr "Keine Änderung"
+
+#: includes/ajax-apifunctions.php:1497 includes/ajax-apifunctions.php:1582
+msgid "Set New [ "
+msgstr "Set New ["
+
+#: includes/ajax-apifunctions.php:1502 includes/ajax-apifunctions.php:1587
+msgid "Append [ "
+msgstr "Append ["
+
+#: includes/ajax-apifunctions.php:1507 includes/ajax-apifunctions.php:1592
+msgid "Prepend [ "
+msgstr "Prävention ["
+
+#: includes/ajax-apifunctions.php:1512 includes/ajax-apifunctions.php:1597
+msgid "Replace [ "
+msgstr "Ersetzen ["
+
+#: includes/ajax-apifunctions.php:1517
+msgid "RegEx Replace [ "
+msgstr "RegEx-Ersatz ["
+
+#: includes/ajax-apifunctions.php:1533 includes/ajax-apifunctions.php:1539
+#: includes/ajax-apifunctions.php:1545 includes/ajax-apifunctions.php:1618
+#: includes/ajax-apifunctions.php:1624 includes/ajax-apifunctions.php:1631
+#: includes/ajax-apifunctions.php:1807 includes/ajax-apifunctions.php:1813
+#: includes/ajax-apifunctions.php:1819 includes/ajax-apifunctions.php:1825
+#: includes/ajax-apifunctions.php:1831 includes/ajax-apifunctions.php:1907
+#: includes/ajax-apifunctions.php:1913 includes/ajax-apifunctions.php:1919
+#: includes/ajax-apifunctions.php:1925 includes/ajax-apifunctions.php:1931
+#: includes/ajax-apifunctions.php:2047 includes/ajax-apifunctions.php:2215
+#: includes/ajax-apifunctions.php:2279 includes/ajax-apifunctions.php:2342
+#: includes/ajax-apifunctions.php:2406 includes/ajax-apifunctions.php:2753
+msgid " ] "
+msgstr "]"
+
+#: includes/ajax-apifunctions.php:1567
+#: templates/template-frontend-tables.php:110
+msgid "SKU"
+msgstr "SKU"
+
+#: includes/ajax-apifunctions.php:1570
+#: templates/template-frontend-tables.php:113
+msgid "Select a condition to edit the SKU, and enter the relevant text"
+msgstr ""
+"Wählen Sie eine Bedingung, um die SKU zu bearbeiten, und geben Sie den "
+"entsprechenden Text ein."
+
+#: includes/ajax-apifunctions.php:1602
+msgid "RegEx_Replace [ "
+msgstr "RegEx _ Ersetzen ["
+
+#: includes/ajax-apifunctions.php:1653
+#: templates/template-frontend-tables.php:149
+msgid "Product Visiblity"
+msgstr "Produkt Visiblity"
+
+#: includes/ajax-apifunctions.php:1656
+#: templates/template-frontend-tables.php:152
+msgid "Choose which all shop pages the product will be listed on"
+msgstr "Wählen Sie, auf welchen allen Shop-Seiten das Produkt aufgeführt wird"
+
+#: includes/ajax-apifunctions.php:1668
+#: templates/template-frontend-tables.php:157
+msgid "Shop and Search"
+msgstr "Shop und Suche"
+
+#: includes/ajax-apifunctions.php:1673
+#: templates/template-frontend-tables.php:158
+msgid "Shop"
+msgstr "Shop"
+
+#: includes/ajax-apifunctions.php:1678
+#: templates/template-frontend-tables.php:159
+msgid "Search"
+msgstr "Suche"
+
+#: includes/ajax-apifunctions.php:1683
+#: templates/template-frontend-tables.php:160
+msgid "Hidden"
+msgstr "Verborgen"
+
+#: includes/ajax-apifunctions.php:1707
+#: templates/template-frontend-tables.php:166
+msgid "Shipping Class"
+msgstr "Versandklasse"
+
+#: includes/ajax-apifunctions.php:1710
+#: templates/template-frontend-tables.php:169
+msgid "Select a shipping class that will be added to all the filtered products"
+msgstr ""
+"Wählen Sie eine Versandklasse, die zu allen gefilterten Produkten "
+"hinzugefügt wird"
+
+#: includes/ajax-apifunctions.php:1722
+msgid "Shipping Class : No Shipping Class"
+msgstr "Versandklasse: Keine Versandklasse"
+
+#: includes/ajax-apifunctions.php:1727
+msgid "Shipping Class : "
+msgstr "Versandklasse:"
+
+#: includes/ajax-apifunctions.php:1736
+#: templates/template-frontend-tables.php:195
+msgid "Price"
+msgstr "Preis"
+
+#: includes/ajax-apifunctions.php:1755
+#: templates/template-frontend-tables.php:201
+msgid "Regular Price"
+msgstr "Regulärer Preis"
+
+#: includes/ajax-apifunctions.php:1758 includes/ajax-apifunctions.php:1858
+#: templates/template-frontend-tables.php:204
+#: templates/template-frontend-tables.php:224
+msgid ""
+"Select a condition to adjust the price and enter the value. You can also "
+"choose an option to round it to the nearest value"
+msgstr ""
+"Wählen Sie eine Bedingung, um den Preis anzupassen und geben Sie den Wert "
+"ein. Sie können auch eine Option wählen, um sie auf den nächstgelegenen Wert "
+"zu runden"
+
+#: includes/ajax-apifunctions.php:1770 includes/ajax-apifunctions.php:1870
+msgid "Increased by Percentage ( + %) [ "
+msgstr "Steigerung um Prozentual (+%) ["
+
+#: includes/ajax-apifunctions.php:1775 includes/ajax-apifunctions.php:1875
+msgid "Decreased by Percentage ( - %) [ "
+msgstr "Verminderte um den Prozentsatz (-%) ["
+
+#: includes/ajax-apifunctions.php:1780 includes/ajax-apifunctions.php:1880
+msgid "Increased by Price ( + $) [ "
+msgstr "Mehr als Preis (+ $) ["
+
+#: includes/ajax-apifunctions.php:1785 includes/ajax-apifunctions.php:1885
+msgid "Decreased by Price ( - $) [ "
+msgstr "Verminderte um Preis (-$) ["
+
+#: includes/ajax-apifunctions.php:1790 includes/ajax-apifunctions.php:1890
+msgid "Flat Price for all [ "
+msgstr "Flache Preise für alle ["
+
+#: includes/ajax-apifunctions.php:1805 includes/ajax-apifunctions.php:1811
+#: includes/ajax-apifunctions.php:1905 includes/ajax-apifunctions.php:1911
+msgid "Percentage : "
+msgstr "Prozentsatz:"
+
+#: includes/ajax-apifunctions.php:1817 includes/ajax-apifunctions.php:1823
+#: includes/ajax-apifunctions.php:1829 includes/ajax-apifunctions.php:1917
+#: includes/ajax-apifunctions.php:1923 includes/ajax-apifunctions.php:1929
+msgid "Amount : "
+msgstr "Menge : "
+
+#: includes/ajax-apifunctions.php:1855
+#: templates/template-frontend-tables.php:221
+msgid "Sale Price"
+msgstr "Angebotspreis"
+
+#: includes/ajax-apifunctions.php:1943
+#: templates/template-frontend-tables.php:254
+msgid "Stock"
+msgstr "Lager"
+
+#: includes/ajax-apifunctions.php:1962
+#: templates/template-frontend-tables.php:260
+msgid "Manage Stock"
+msgstr "Lagerverwaltung"
+
+#: includes/ajax-apifunctions.php:1965
+#: templates/template-frontend-tables.php:263
+msgid "Enable or Disable manage stock for products or variations"
+msgstr ""
+"Bestmöglichen oder Deaktivieren Sie den Bestand für Produkte oder Variationen"
+
+#: includes/ajax-apifunctions.php:1977 includes/ajax-apifunctions.php:2672
+msgid "Enabled"
+msgstr "Aktiviert"
+
+#: includes/ajax-apifunctions.php:1982 includes/ajax-apifunctions.php:2667
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#: includes/ajax-apifunctions.php:2006
+#: templates/template-frontend-tables.php:276
+msgid "Stock Quantity"
+msgstr "Verfügbare Menge/Stückzahl"
+
+#: includes/ajax-apifunctions.php:2009
+#: templates/template-frontend-tables.php:279
+msgid "Choose an option to update stock quantity and enter the value"
+msgstr ""
+"Wählen Sie eine Option, um die Lagermenge zu aktualisieren und den Wert "
+"einzugeben"
+
+#: includes/ajax-apifunctions.php:2021 includes/ajax-apifunctions.php:2189
+#: includes/ajax-apifunctions.php:2253 includes/ajax-apifunctions.php:2316
+#: includes/ajax-apifunctions.php:2380
+msgid "Increased [ "
+msgstr "Erhöht ["
+
+#: includes/ajax-apifunctions.php:2026 includes/ajax-apifunctions.php:2194
+#: includes/ajax-apifunctions.php:2258 includes/ajax-apifunctions.php:2321
+#: includes/ajax-apifunctions.php:2385
+msgid "Decreased [ "
+msgstr "Verminderte ["
+
+#: includes/ajax-apifunctions.php:2031 includes/ajax-apifunctions.php:2199
+#: includes/ajax-apifunctions.php:2263 includes/ajax-apifunctions.php:2326
+#: includes/ajax-apifunctions.php:2390 includes/ajax-apifunctions.php:2737
+msgid "Replaced [ "
+msgstr "Ersetzt ["
+
+#: includes/ajax-apifunctions.php:2045
+msgid "Quantity : "
+msgstr "Menge:"
+
+#: includes/ajax-apifunctions.php:2069
+#: templates/template-frontend-tables.php:293
+msgid "Allow Backorders"
+msgstr "Lieferrückstand erlauben"
+
+#: includes/ajax-apifunctions.php:2072
+#: templates/template-frontend-tables.php:296
+msgid "Choose how you want to handle backorders"
+msgstr "Wählen Sie, wie Sie Backorder bearbeiten möchten"
+
+#: includes/ajax-apifunctions.php:2084
+#: templates/template-frontend-tables.php:301
+msgid "Do not Allow"
+msgstr "Nicht erlauben"
+
+#: includes/ajax-apifunctions.php:2089
+#: templates/template-frontend-tables.php:302
+msgid "Allow, but Notify the Customer"
+msgstr "Den Kunden erlauben, aber benachrichtigen"
+
+#: includes/ajax-apifunctions.php:2094
+msgid "Allowed"
+msgstr "Erlaubt"
+
+#: includes/ajax-apifunctions.php:2118
+#: templates/template-frontend-tables.php:310
+msgid "Stock Status"
+msgstr "Lagerbestand"
+
+#: includes/ajax-apifunctions.php:2121
+#: templates/template-frontend-tables.php:313
+msgid "Choose an option to update  the stock status"
+msgstr "Wählen Sie eine Option, um den Aktienstatus zu aktualisieren"
+
+#: includes/ajax-apifunctions.php:2133
+#: templates/template-frontend-tables.php:318
+msgid "In Stock"
+msgstr "Auf Lager"
+
+#: includes/ajax-apifunctions.php:2138
+#: templates/template-frontend-tables.php:319
+msgid "Out of Stock"
+msgstr "Ausverkauft"
+
+#: includes/ajax-apifunctions.php:2143
+#: templates/template-frontend-tables.php:320
+msgid "On Backorder"
+msgstr "Nachbestellung möglich"
+
+#: includes/ajax-apifunctions.php:2154
+#: templates/template-frontend-tables.php:326
+msgid "Weight & Dimensions"
+msgstr "Gewicht & Maße"
+
+#: includes/ajax-apifunctions.php:2173
+#: templates/template-frontend-tables.php:332
+msgid "Length"
+msgstr "Länge"
+
+#: includes/ajax-apifunctions.php:2177
+#: templates/template-frontend-tables.php:336
+msgid "Choose an option to update length and enter the value"
+msgstr ""
+"Wählen Sie eine Option, um die Länge zu aktualisieren und den Wert einzugeben"
+
+#: includes/ajax-apifunctions.php:2213 includes/ajax-apifunctions.php:2277
+#: includes/ajax-apifunctions.php:2340 includes/ajax-apifunctions.php:2404
+msgid "Dimension : "
+msgstr "Dimension:"
+
+#: includes/ajax-apifunctions.php:2237
+#: templates/template-frontend-tables.php:350
+msgid "Width"
+msgstr "Breite"
+
+#: includes/ajax-apifunctions.php:2241
+#: templates/template-frontend-tables.php:354
+msgid "Choose an option to update width and enter the value"
+msgstr ""
+"Wählen Sie eine Option, um die Breite zu aktualisieren und den Wert "
+"einzugeben"
+
+#: includes/ajax-apifunctions.php:2301
+#: templates/template-frontend-tables.php:368
+msgid "Height"
+msgstr "Höhe"
+
+#: includes/ajax-apifunctions.php:2304
+#: templates/template-frontend-tables.php:371
+msgid "Choose an option to update height and enter the value"
+msgstr ""
+"Wählen Sie eine Option, um die Höhe zu aktualisieren und geben Sie den Wert "
+"ein"
+
+#: includes/ajax-apifunctions.php:2364
+#: templates/template-frontend-tables.php:385
+msgid "Weight"
+msgstr "Gewicht"
+
+#: includes/ajax-apifunctions.php:2368
+#: templates/template-frontend-tables.php:389
+msgid "Choose an option to update weight and enter the value"
+msgstr "Wählen Sie eine Option, um Gewicht zu erhöhen und den Wert einzugeben"
+
+#: includes/ajax-apifunctions.php:2418
+#: templates/template-frontend-filters.php:141
+#: templates/template-frontend-tables.php:408
+msgid "Attributes"
+msgstr "Attribute"
+
+#: includes/ajax-apifunctions.php:2439
+#: templates/template-frontend-tables.php:415
+msgid "Attribute Actions"
+msgstr "Aktionen aktiv"
+
+#: includes/ajax-apifunctions.php:2443
+#: templates/template-frontend-tables.php:419
+msgid "Select an option to make changes to your attribute values"
+msgstr ""
+"Wählen Sie eine Option, um Änderungen an Ihren Attributwerten vorzunehmen"
+
+#: includes/ajax-apifunctions.php:2455 includes/ajax-apifunctions.php:2517
+msgid "Added "
+msgstr "Hinzugefügt "
+
+#: includes/ajax-apifunctions.php:2460 includes/ajax-apifunctions.php:2522
+msgid "Removed "
+msgstr "Entfernt"
+
+#: includes/ajax-apifunctions.php:2465 includes/ajax-apifunctions.php:2527
+msgid "Replaced "
+msgstr "Ersetzt"
+
+#: includes/ajax-apifunctions.php:2480 includes/ajax-apifunctions.php:2501
+#: templates/template-frontend-tables.php:466
+msgid "Categories"
+msgstr "Kategorien"
+
+#: includes/ajax-apifunctions.php:2505
+msgid "Category process"
+msgstr "Kategorisierungsprozess"
+
+#: includes/ajax-apifunctions.php:2544
+#: templates/template-frontend-tables.php:522
+msgid "Role Based Pricing"
+msgstr "Rollenpreis"
+
+#: includes/ajax-apifunctions.php:2563
+#: templates/template-frontend-tables.php:528
+msgid "Hide price"
+msgstr "Preis ausblenden"
+
+#: includes/ajax-apifunctions.php:2566
+#: templates/template-frontend-tables.php:531
+msgid "Select option to hide price for unregistered users."
+msgstr ""
+"Wählen Sie die Option, um den Preis für nicht registrierte Benutzer zu "
+"verstecken."
+
+#: includes/ajax-apifunctions.php:2578
+#: templates/template-frontend-tables.php:536
+msgid "Show Price"
+msgstr "Preis anzeigen"
+
+#: includes/ajax-apifunctions.php:2583
+#: templates/template-frontend-tables.php:537
+msgid "Hide Price"
+msgstr "Preis ausblenden"
+
+#: includes/ajax-apifunctions.php:2608
+#: templates/template-frontend-tables.php:543
+msgid "Hide product price based on user role"
+msgstr "Produktpreis auf der Grundlage der Benutzerrolle verstecken"
+
+#: includes/ajax-apifunctions.php:2611
+#: templates/template-frontend-tables.php:546
+msgid "For selected user role, hide the product price"
+msgstr "Für ausgewählte Benutzerrolle, verstecken Sie den Produktpreis"
+
+#: includes/ajax-apifunctions.php:2625
+msgid ", "
+msgstr ", "
+
+#: includes/ajax-apifunctions.php:2652
+#: templates/template-frontend-tables.php:569
+msgid "Enforce product price adjustment"
+msgstr "Zwang Produktpreisanpassung"
+
+#: includes/ajax-apifunctions.php:2655
+#: templates/template-frontend-tables.php:572
+msgid "Select option to enforce indvidual price adjustment"
+msgstr "Wählen Sie die Option, die individuelle Preisanpassung durchzusetzen"
+
+#: includes/ajax-apifunctions.php:2693
+#: templates/template-frontend-tables.php:594
+msgid "Shipping Pro"
+msgstr "Shipping Pro"
+
+#: includes/ajax-apifunctions.php:2712
+#: templates/template-frontend-tables.php:600
+msgid "Shipping Unit"
+msgstr "Schifffahrtseinheit"
+
+#: includes/ajax-apifunctions.php:2715
+#: templates/template-frontend-tables.php:603
+msgid "Update Shipping Unit"
+msgstr "Update Shipping Unit"
+
+#: includes/ajax-apifunctions.php:2727
+msgid "Added [ "
+msgstr "Hinzugefügt ["
+
+#: includes/ajax-apifunctions.php:2732
+msgid "Subtracted [ "
+msgstr "Subtrahiert ["
+
+#: includes/ajax-apifunctions.php:2751
+msgid "Unit : "
+msgstr "Einheit:"
+
+#: includes/ajax-apifunctions.php:2780
+#: templates/template-frontend-tables.php:627
+msgid "Update meta values"
+msgstr "Update-Meta-Werte"
+
+#: includes/ajax-apifunctions.php:2804
+#: templates/template-frontend-tables.php:641
+msgid "Update meta"
+msgstr "Update meta"
+
+#: includes/ajax-apifunctions.php:2828
+#: templates/template-frontend-tables.php:36
+#: templates/template-frontend-tables.php:51
+#: templates/template-frontend-tables.php:60
+#: templates/template-frontend-tables.php:657
+#: templates/template-scheduling-fields.php:116
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: includes/ajax-apifunctions.php:2829
+#: templates/template-frontend-tables.php:37
+#: templates/template-frontend-tables.php:53
+#: templates/template-frontend-tables.php:659
+msgid "Continue"
+msgstr "Weiter"
+
+#: includes/ajax-apifunctions.php:2836
+msgid "Undo the update - Overview"
+msgstr "Update rückgängig machen-Übersicht"
+
+#: includes/ajax-apifunctions.php:2840
+msgid "Oops! No previous update found."
+msgstr "Oops! Kein früheres Update gefunden."
+
+#: includes/ajax-apifunctions.php:2842
+#: templates/template-frontend-tables.php:35
+#: templates/template-frontend-tables.php:656
+#: templates/template-scheduling-fields.php:115
+msgid "Back"
+msgstr "Zurück"
+
+#: includes/class-eh-variable-product.php:59
+msgid "Attribute Values (Existing)"
+msgstr "Attribut-Werte (Existenz)"
+
+#: includes/class-eh-variable-product.php:60
+msgid "Select the Attribute value(s) for which the filter has to be applied"
+msgstr ""
+"Wählen Sie den Attribut-Wert (n), für den der Filter angewendet werden muss"
+
+#: includes/class-eh-variable-product.php:61
+msgid "Select Attributes Values"
+msgstr "Wählen Sie Attribut-Werte"
+
+#: includes/class-eh-variable-product.php:62
+msgid "Desired Price"
+msgstr "Wunschpreis"
+
+#: includes/class-eh-variable-product.php:63
+msgid "Minimum Price"
+msgstr "Mindestpreis"
+
+#: includes/class-eh-variable-product.php:64
+msgid "Maximum Price"
+msgstr "Maximaler Preis"
+
+#: includes/class-eh-variable-product.php:65
+msgid "Do you want to Proceed?"
+msgstr "Wollen Sie sich weitermachen?"
+
+#: includes/class-eh-variable-product.php:66
+#: includes/class-eh-variable-product.php:75
+msgid "Yes, Proceed"
+msgstr "Ja, fortfahren"
+
+#: includes/class-eh-variable-product.php:67
+#: includes/class-eh-variable-product.php:70
+#: includes/class-eh-variable-product.php:76
+#: includes/class-eh-variable-product.php:80
+msgid "No, Wait"
+msgstr "Nein, warte"
+
+#: includes/class-eh-variable-product.php:68
+msgid "Proceed with Update?"
+msgstr "Mit Update fortkommen?"
+
+#: includes/class-eh-variable-product.php:69
+msgid "Yes, Update"
+msgstr "Ja, Update"
+
+#: includes/class-eh-variable-product.php:71
+msgid "Proceed with Undo Update?"
+msgstr "Mit Undo Update fortkommen?"
+
+#: includes/class-eh-variable-product.php:72
+msgid "This operation can not be reversed "
+msgstr "Diese Operation kann nicht rückgängig gemacht werden"
+
+#: includes/class-eh-variable-product.php:73
+msgid "Undo the Previous Update?"
+msgstr "Das vorzeitige Update rückgängig machen?"
+
+#: includes/class-eh-variable-product.php:74
+msgid "Click Proceed to see the Update Details."
+msgstr "Klicken Sie auf Weiter, um die Aktualisierungsdetails zu sehen."
+
+#: includes/class-eh-variable-product.php:77
+msgid "Are you Sure ?"
+msgstr "Bist du sicher?"
+
+#: includes/class-eh-variable-product.php:78
+msgid "Do you want to Reset?"
+msgstr "Wollen Sie zurücksetzen?"
+
+#: includes/class-eh-variable-product.php:79
+msgid "Yes, Reset"
+msgstr "Ja, Reset"
+
+#: includes/class-eh-variable-product.php:81
+msgid "New Title"
+msgstr "Neuer Titel"
+
+#: includes/class-eh-variable-product.php:82
+msgid "Append Title"
+msgstr "Anhang Titel"
+
+#: includes/class-eh-variable-product.php:83
+msgid "Prepend Title"
+msgstr "Titel vorbeugen"
+
+#: includes/class-eh-variable-product.php:84
+#: includes/class-eh-variable-product.php:89
+msgid "Text to be Replaced"
+msgstr "Text zu ersetzen"
+
+#: includes/class-eh-variable-product.php:85
+#: includes/class-eh-variable-product.php:90
+msgid "Replace Text"
+msgstr "Text ersetzen"
+
+#: includes/class-eh-variable-product.php:86
+msgid "New SKU"
+msgstr "Neue Art.-Nr."
+
+#: includes/class-eh-variable-product.php:87
+msgid "Append SKU"
+msgstr "Anhängen SKU"
+
+#: includes/class-eh-variable-product.php:88
+msgid "Prepend SKU"
+msgstr "SKU vorbereiten"
+
+#: includes/class-eh-variable-product.php:91
+msgid "Product"
+msgstr "Produkt"
+
+#: includes/class-eh-variable-product.php:92
+msgid "Variations"
+msgstr "Variationen"
+
+#: includes/class-eh-variable-product.php:93
+msgid "Increase Percentage"
+msgstr "Steigerungen"
+
+#: includes/class-eh-variable-product.php:94
+msgid "Nearest Value"
+msgstr "Nächster Wert"
+
+#: includes/class-eh-variable-product.php:95
+msgid "Decrease Percentage"
+msgstr "Rückgang des Prozentuals"
+
+#: includes/class-eh-variable-product.php:96
+msgid "Increase Price"
+msgstr "Preis erhöhen"
+
+#: includes/class-eh-variable-product.php:97
+msgid "Set Flat Price to All"
+msgstr "Setzen Sie den Preis für alle"
+
+#: includes/class-eh-variable-product.php:98
+msgid "Decrease Price"
+msgstr "Preis sinkt"
+
+#: includes/class-eh-variable-product.php:99
+msgid "Value to Add"
+msgstr "Wert zu fügen"
+
+#: includes/class-eh-variable-product.php:100
+msgid "Value to Subtract"
+msgstr "Wert auf Subtrakt"
+
+#: includes/class-eh-variable-product.php:101
+msgid "Value to Replace"
+msgstr "Wert zum Ersatz"
+
+#: includes/class-eh-variable-product.php:102
+msgid "Shipping Unit Will be Added"
+msgstr "Versandeinheit wird hinzugefügt"
+
+#: includes/class-eh-variable-product.php:103
+msgid "Shipping Unit Will be Subtracted"
+msgstr "Schifffahrtseinheit wird unterzufahren"
+
+#: includes/class-eh-variable-product.php:104
+msgid "Shipping Unit Will be Replaced"
+msgstr "Schifffahrtseinheit wird verlegt"
+
+#: includes/class-eh-variable-product.php:105
+msgid "Update Successful"
+msgstr "Aktualisierung erfolgreich"
+
+#: includes/class-eh-variable-product.php:106
+msgid "Undo Update Successful"
+msgstr "Nicht auf Update erfolgreich"
+
+#: includes/class-eh-variable-product.php:107
+msgid "OK"
+msgstr "OK"
+
+#: includes/class-eh-variable-product.php:224
+msgid "Bulk Edit "
+msgstr "Bulk Edit"
+
+#: includes/class-eh-variable-product.php:225
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: includes/class-eh-variable-product.php:226
+msgid "Jobs"
+msgstr "Jobs"
+
+#: includes/class-eh-variable-product.php:227
+msgid "Licence"
+msgstr "Lizenz"
+
+#: includes/class-eh-variable-product.php:242
+msgid "FILTER"
+msgstr "Filter"
+
+#: includes/class-eh-variable-product.php:245
+msgid "PREVIEW"
+msgstr "VORSCHAU"
+
+#: includes/class-eh-variable-product.php:248
+msgid "EDIT PRODUCTS"
+msgstr "EDIT PRODUCTS"
+
+#: includes/class-eh-variable-product.php:251
+msgid "SCHEDULE"
+msgstr "PLAN"
+
+#: includes/class-eh-variable-product.php:254
+msgid "FINISH"
+msgstr "FARBE"
+
+#: includes/class-table-data.php:224
+#, php-format
+msgid "1 item"
+msgid_plural "%s items"
+msgstr[0] "1 Element"
+msgstr[1] "%s Artikel"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:373
+#, php-format
+msgid ""
+"The license key for %s has expired. You can reactivate or purchase a license "
+"key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Der Lizenzschlüssel für %s ist abgelaufen. Sie können ihn reaktivieren oder "
+"einen neuen Lizenzschlüssel über Ihr Konto <a href=\"%s\" target=\"_blank\"> "
+"Dashboard</a> kaufen."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:384
+#, php-format
+msgid ""
+"The subscription for %s is on-hold. You can reactivate the subscription from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Das Abonnement für %s ist ausgesetzt. Sie können es über Ihren Account "
+"reaktivieren. <a href=\"%s\" target=\"_blank\">Dashboard</a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:395
+#, php-format
+msgid ""
+"The subscription for %s has been cancelled. You can renew the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new "
+"license key will be emailed to you after your order has been completed."
+msgstr ""
+"Das Abonnement für %s wurde beendet. Sie können es von Ihrem <a href=\"%s\" "
+"target=\"_blank\">Account-Dashboard</a> aus erneuern. Ein neuer "
+"Lizenzschlüssel wird an Ihre E-Mail-Adresse geschickt, sobald die Bestellung "
+"abgeschlossen ist."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:406
+#, php-format
+msgid ""
+"The subscription for %s has expired. You can reactivate the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Das Abo für %s ist ausgelaufen. Du kannst es über dein <a href=\"%s\" target="
+"\"_blank\">Account-Dashboard</a> erneuern."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:417
+#, php-format
+msgid ""
+"The subscription for %s has been suspended. You can reactivate the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"Das Abonnement für %s wurde unterbrochen. Sie können das Abonnement über Ihr "
+"Konto-<a href=„%s“ target=„_blank“>Dashboard</a> reaktivieren."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:428
+#, php-format
+msgid ""
+"The subscription for %s is still pending. You can check on the status of the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"Das Abonnement für %s ist noch schwebend. Du kannst den Status des "
+"Abonnements von deines Accounts überprüfen <a href=\"%s\" target=\"_blank"
+"\">Dashboard</a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:439
+#, php-format
+msgid ""
+"The subscription for %s has been placed in the trash and will be deleted "
+"soon. You can purchase a new subscription from your account <a href=\"%s\" "
+"target=\"_blank\">dashboard</a>."
+msgstr ""
+"Das Abonnement für %s wurde in den Papierkorb verschoben und wird bald "
+"gelöscht. Sie können ein neues Abonnement über Ihr Account erwerben. <a href="
+"\"%s\" target=\"_blank\">Dashboard</a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:450
+#, php-format
+msgid ""
+"A subscription for %s could not be found. You can purchase a subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Das Abonnement für %s konnte nicht gefunden werden. Sie können ein "
+"Abonnement von Ihrem Konto aus erwerben <a href=\"%s\" target=\"_blank"
+"\">Dashboard</a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:461
+#, php-format
+msgid ""
+"A license key for %s could not be found. Maybe you forgot to enter a license "
+"key when setting up %s, or the key was deactivated in your account. You can "
+"reactivate license key at your plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a>."
+msgstr ""
+"Ein Lizenzschlüssel für %s konnte nicht gefunden werden. Vielleicht hast du "
+"vergessen, beim Einrichten von %s einen Lizenzschlüssel einzugeben oder der "
+"Schlüssel in deinem Konto wurde deaktiviert. Einen Lizenzschlüssel kannst du "
+"über dein Konto-<a href=\"%s“ target=\"_blank“>Dashboard</a> reaktivieren "
+"oder kaufen."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:472
+#, php-format
+msgid ""
+"Download permission for %s has been revoked possibly due to a license key or "
+"subscription expiring. You can reactivate or purchase a license key from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Die Download-Berechtigung für %s wurde aufgrund eines abgelaufenen "
+"Lizenzschlüssels oder abgelaufenem Abos widerrufen. Reaktivieren Sie diesen "
+"oder bestellen Sie einen neuen Lizenzschlüssel von Ihrem <a href=\"%s\" "
+"target=\"_blank\">Dashboard</a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:483
+#, php-format
+msgid ""
+"%s has not been activated. Go to the plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a> and enter the license key and license email to activate "
+"%s."
+msgstr ""
+"%s wurde nicht aktiviert. Gehe zum Plugin <a href=\"%s\" target=\"_blank"
+"\">Einstellungsseite</a> und geben Sie den Lizenzschlüssel und die Lizenz-E-"
+"Mail ein, um sie zu aktivieren %s."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:494
+#, php-format
+msgid ""
+"You changed the subscription for %s, so you will need to enter your new API "
+"License Key in the settings page. The License Key should have arrived in "
+"your email inbox, if not you can get it by logging into your account <a href="
+"\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Sie veränderten das Abonnement für %s und müssen den neuen API-"
+"Lizenzschlüssel auf der Lizenz-Seite eingeben. Der Lizenzschlüssel sollte in "
+"Ihrem E-Mail-Posteingang angekommen sein, falls nicht schauen Sie in Ihrem "
+"Konto nach im <a href=\"%s\" target=\"_blank\">Dashboard</a>."
+
+#: templates/template-frontend-filters.php:21
+msgid "Filter the Products"
+msgstr "Filter der Produkte"
+
+#: templates/template-frontend-filters.php:22
+msgid "Check your Increase/Decrease Percentage to get back old price."
+msgstr ""
+"Überprüfen Sie Ihren Inkrementenzanteil, um den alten Preis wieder zu "
+"erhalten."
+
+#: templates/template-frontend-filters.php:22
+msgid "Generate Percentage"
+msgstr "Generieren Anteil"
+
+#: templates/template-frontend-filters.php:23
+msgid "Click to undo the last update you have done"
+msgstr ""
+"Klicken Sie auf das letzte Update, das Sie durchgeführt haben, um das letzte "
+"Update rückgängig zu machen."
+
+#: templates/template-frontend-filters.php:23
+msgid "Undo Last Update"
+msgstr "Nicht das letzte Update"
+
+#: templates/template-frontend-filters.php:30
+msgid "Product Title"
+msgstr "Bezeichnung des Produkts"
+
+#: templates/template-frontend-filters.php:33
+msgid "Select a condition from the drop-down and enter a product title"
+msgstr ""
+"Wählen Sie eine Bedingung aus dem Drop-Down und geben Sie einen Produkt-"
+"Titel ein"
+
+#: templates/template-frontend-filters.php:37
+#: templates/template-frontend-filters.php:130
+msgid "All"
+msgstr "Alle"
+
+#: templates/template-frontend-filters.php:38
+msgid "Starts With"
+msgstr "Starts With"
+
+#: templates/template-frontend-filters.php:39
+msgid "Ends With"
+msgstr "Ends Mit"
+
+#: templates/template-frontend-filters.php:40
+msgid "Contains"
+msgstr "Enthält"
+
+#: templates/template-frontend-filters.php:41
+msgid "Regex Match"
+msgstr "Regex Match"
+
+#: templates/template-frontend-filters.php:46
+#: templates/template-frontend-tables.php:88
+#: templates/template-frontend-tables.php:127
+msgid "Select Flags (Optional)"
+msgstr "Wählen Sie Flaggen (optional)"
+
+#: templates/template-frontend-filters.php:71
+msgid "Product Types"
+msgstr "Produkt-Typen"
+
+#: templates/template-frontend-filters.php:74
+msgid "Select the product type(s) for which the filter has to be applied"
+msgstr ""
+"Wählen Sie den Produkttyp (n) aus, für den der Filter angewendet werden muss"
+
+#: templates/template-frontend-filters.php:78
+msgid "Select Product Types"
+msgstr "Produkttypen auswählen"
+
+#: templates/template-frontend-filters.php:91
+msgid "Product Categories"
+msgstr "Produktkategorien"
+
+#: templates/template-frontend-filters.php:94
+msgid ""
+"Select the category(s) for which the filter has to be applied. Enable the "
+"checkbox to include subcategories"
+msgstr ""
+"Wählen Sie die Kategorie (n) aus, für die der Filter angewendet werden soll. "
+"Aktivieren Sie das Kästchen, um Unterkategorien einzuschließen"
+
+#: templates/template-frontend-filters.php:123
+msgid "Product Regular Price"
+msgstr "Produkt regulärer Preis"
+
+#: templates/template-frontend-filters.php:126
+msgid "Select a condition and specify a price"
+msgstr "Wählen Sie eine Bedingung und geben Sie einen Preis an"
+
+#: templates/template-frontend-filters.php:134
+msgid "Between"
+msgstr "Zwischen"
+
+#: templates/template-frontend-filters.php:147
+msgid "Product Attributes (Group with OR)"
+msgstr "Produkt-Attribute (Gruppe mit OR)"
+
+#: templates/template-frontend-filters.php:150
+msgid ""
+"The products will be filtered when any one of the attributes and it's "
+"corresponding values are present"
+msgstr ""
+"Die Produkte werden gefiltert, wenn eines der Attribute vorhanden ist und "
+"die entsprechenden Werte vorhanden sind."
+
+#: templates/template-frontend-filters.php:166
+msgid "Product Attributes (Group with AND)"
+msgstr "Produkt-Attributen (Gruppe mit AND)"
+
+#: templates/template-frontend-filters.php:169
+msgid ""
+"The products will be filtered only when both attributes and it's "
+"corresponding values are present"
+msgstr ""
+"Die Produkte werden nur gefiltert, wenn beide Attribute und die "
+"entsprechenden Werte vorhanden sind"
+
+#: templates/template-frontend-filters.php:187
+msgid "<span style=\"padding-right:1em ; font-size:20px;\">Exclusions</span> "
+msgstr ""
+"<span style = \"padding-right:1em; font-size:20px;\">Exclusions </span>"
+
+#: templates/template-frontend-filters.php:188
+#: templates/template-frontend-tables.php:268
+#: templates/template-frontend-tables.php:577
+msgid "Enable"
+msgstr "Aktivieren"
+
+#: templates/template-frontend-filters.php:194
+msgid "Exclude by IDs"
+msgstr "Ausgenommen durch Ausweise"
+
+#: templates/template-frontend-filters.php:197
+msgid ""
+"Enter the Product IDs to exclude from getting updated (separate IDs by "
+"comma)."
+msgstr ""
+"Geben Sie die Produktnummer ein, um eine Aktualisierung auszuschließen "
+"(separate IDs per Komma)."
+
+#: templates/template-frontend-filters.php:205
+msgid "Exclude by Categories"
+msgstr "Ausschließen nach Kategorien"
+
+#: templates/template-frontend-filters.php:208
+msgid ""
+"Select the categories to exclude products from getting updated. All the "
+"subcategories under a parent category will be excluded if you enable "
+"'Include Subcategories' checkbox."
+msgstr ""
+"Wählen Sie die Kategorien aus, um Produkte nicht auf den neuesten Stand zu "
+"bringen. Alle Unterkategorien unter einer Elternkategorie werden "
+"ausgeschlossen, wenn Sie das Kästchen \"Unterkategorien einschließen\" "
+"aktivieren."
+
+#: templates/template-frontend-filters.php:226
+msgid "Reset Filter"
+msgstr "Filter zurücksetzen"
+
+#: templates/template-frontend-filters.php:227
+msgid "Preview Filtered Products"
+msgstr "Vorschau gefilterte Produkte"
+
+#: templates/template-frontend-filters.php:259
+#: templates/template-frontend-tables.php:712
+msgid "No categories found."
+msgstr "Keine Kategorien gefunden."
+
+#: templates/template-frontend-settings-tab-fields.php:8
+msgid "Settings "
+msgstr "Einstellungen"
+
+#: templates/template-frontend-settings-tab-fields.php:14
+msgid "Update Custom Meta"
+msgstr "Update Custom Meta"
+
+#: templates/template-frontend-settings-tab-fields.php:17
+msgid "Enter custom meta keys seperated by comma."
+msgstr "Geben Sie eigene Meta-Schlüssel ein, die durch Komma getrennt sind."
+
+#: templates/template-frontend-settings-tab-fields.php:30
+msgid "Save"
+msgstr "Speichern"
+
+#: templates/template-frontend-tables.php:22
+msgid "Items per page:"
+msgstr "Einträge pro Seite:"
+
+#: templates/template-frontend-tables.php:29
+msgid "Apply"
+msgstr "Übernehmen"
+
+#: templates/template-frontend-tables.php:47
+msgid "Updating the products. Do not refresh..."
+msgstr "Aktualisierung der Produkte. Nicht erfrischen ..."
+
+#: templates/template-frontend-tables.php:52
+msgid "Undo"
+msgstr "Rückgängig"
+
+#: templates/template-frontend-tables.php:57
+msgid "Undo previous update. Do not refresh..."
+msgstr "Nicht das vorherige Update. Nicht erfrischen ..."
+
+#: templates/template-frontend-tables.php:65
+msgid "Update the Products"
+msgstr "Update der Produkte"
+
+#: templates/template-frontend-tables.php:78
+#: templates/template-frontend-tables.php:117
+#: templates/template-frontend-tables.php:156
+#: templates/template-frontend-tables.php:177
+#: templates/template-frontend-tables.php:208
+#: templates/template-frontend-tables.php:228
+#: templates/template-frontend-tables.php:267
+#: templates/template-frontend-tables.php:283
+#: templates/template-frontend-tables.php:300
+#: templates/template-frontend-tables.php:317
+#: templates/template-frontend-tables.php:340
+#: templates/template-frontend-tables.php:358
+#: templates/template-frontend-tables.php:375
+#: templates/template-frontend-tables.php:393
+#: templates/template-frontend-tables.php:423
+#: templates/template-frontend-tables.php:535
+#: templates/template-frontend-tables.php:576
+#: templates/template-frontend-tables.php:607
+msgid "< No Change >"
+msgstr "Button Text ändern (Produktseite)"
+
+#: templates/template-frontend-tables.php:79
+#: templates/template-frontend-tables.php:118
+msgid "Set New"
+msgstr "Set neu"
+
+#: templates/template-frontend-tables.php:80
+#: templates/template-frontend-tables.php:119
+msgid "Append"
+msgstr "Anhängen"
+
+#: templates/template-frontend-tables.php:81
+#: templates/template-frontend-tables.php:120
+msgid "Prepend"
+msgstr "Voranstellen"
+
+#: templates/template-frontend-tables.php:82
+#: templates/template-frontend-tables.php:121
+#: templates/template-frontend-tables.php:286
+#: templates/template-frontend-tables.php:343
+#: templates/template-frontend-tables.php:361
+#: templates/template-frontend-tables.php:378
+#: templates/template-frontend-tables.php:396
+#: templates/template-frontend-tables.php:610
+msgid "Replace"
+msgstr ""
+"Geben Sie einen Text ein, um den vorhandenen Knopf \"Hinzufügen\" auf der "
+"Shop-Seite zu ersetzen."
+
+#: templates/template-frontend-tables.php:83
+#: templates/template-frontend-tables.php:122
+msgid "RegEx Replace"
+msgstr "RegEx-Ersatz"
+
+#: templates/template-frontend-tables.php:178
+msgid "No Shipping Class"
+msgstr "Versandklasse"
+
+#: templates/template-frontend-tables.php:185
+msgid "< No Shipping Class >"
+msgstr "Versandklasse"
+
+#: templates/template-frontend-tables.php:209
+#: templates/template-frontend-tables.php:229
+msgid "Increase by Percentage ( + %)"
+msgstr "Steigerung um Prozentual (+%)"
+
+#: templates/template-frontend-tables.php:210
+#: templates/template-frontend-tables.php:230
+msgid "Decrease by Percentage ( - %)"
+msgstr "Rückgang um Prozentsatz (-%)"
+
+#: templates/template-frontend-tables.php:211
+#: templates/template-frontend-tables.php:231
+msgid "Increase by Price ( + $)"
+msgstr "Steigerung um Preis (+ $)"
+
+#: templates/template-frontend-tables.php:212
+#: templates/template-frontend-tables.php:232
+msgid "Decrease by Price ( - $)"
+msgstr "Regelpreis verstecken"
+
+#: templates/template-frontend-tables.php:213
+#: templates/template-frontend-tables.php:233
+msgid "Flat Price for All"
+msgstr "Alle"
+
+#: templates/template-frontend-tables.php:241
+msgid "Use Regular Price to set Sale Price"
+msgstr "Verwenden Sie den regulären Preis, um den Verkaufspreis festzulegen"
+
+#: templates/template-frontend-tables.php:244
+msgid ""
+"Enable this option to set the Sale Price based on the the Regular Price."
+msgstr ""
+"Aktivieren Sie diese Option, um den Verkaufspreis auf den regulären Preis zu "
+"setzen."
+
+#: templates/template-frontend-tables.php:269
+#: templates/template-frontend-tables.php:578
+msgid "Disable"
+msgstr "Deaktivieren"
+
+#: templates/template-frontend-tables.php:284
+#: templates/template-frontend-tables.php:341
+#: templates/template-frontend-tables.php:359
+#: templates/template-frontend-tables.php:376
+#: templates/template-frontend-tables.php:394
+msgid "Increase"
+msgstr "Erhöhen"
+
+#: templates/template-frontend-tables.php:285
+#: templates/template-frontend-tables.php:342
+#: templates/template-frontend-tables.php:360
+#: templates/template-frontend-tables.php:377
+#: templates/template-frontend-tables.php:395
+msgid "Decrease"
+msgstr "Verringern"
+
+#: templates/template-frontend-tables.php:303
+msgid "Allow"
+msgstr "Erlauben"
+
+#: templates/template-frontend-tables.php:424
+msgid "Add New Values"
+msgstr "Neue Werte hinzufügen"
+
+#: templates/template-frontend-tables.php:425
+msgid "Remove Existing Values"
+msgstr "Bestehende Werte entfernen"
+
+#: templates/template-frontend-tables.php:426
+msgid "Overwrite Existing Values"
+msgstr "Bestehende Werte überschreiben"
+
+#: templates/template-frontend-tables.php:432
+msgid "Attributes to Update"
+msgstr "Attribute zum Update"
+
+#: templates/template-frontend-tables.php:436
+msgid "Select the attribute(s) for which you want to change the values"
+msgstr "Wählen Sie das Attribut (s), für das Sie die Werte ändern möchten"
+
+#: templates/template-frontend-tables.php:473
+msgid "Category Actions"
+msgstr "Kategorienaktionen"
+
+#: templates/template-frontend-tables.php:476
+msgid ""
+"Select an action to re-assign categories. 'Add' will append and 'Remove' "
+"will take out categories. 'Overwrite' will remove all the existing "
+"categories and assign the selected categories"
+msgstr ""
+"Wählen Sie eine Aktion aus, um Kategorien neu zuzuordnen. ` Hinzufügen ` "
+"wird angehängt und ` Entfernen ` wird Kategorien herausnehmen. "
+"\"Überschreiben\" entfernt alle bestehenden Kategorien und weist die "
+"ausgewählten Kategorien zu"
+
+#: templates/template-frontend-tables.php:487
+msgid "Select Categories"
+msgstr "Kategorien auswählen"
+
+#: templates/template-frontend-tables.php:490
+msgid "Select a category to perform the action you have chosen."
+msgstr ""
+"Wählen Sie eine Kategorie aus, um die von Ihnen gewählte Aktion "
+"durchzuführen."
+
+#: templates/template-frontend-tables.php:550
+msgid "User Role"
+msgstr "Benutzerrolle"
+
+#: templates/template-frontend-tables.php:608
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: templates/template-frontend-tables.php:609
+msgid "Subtract"
+msgstr "Abziehen"
+
+#: templates/template-frontend-tables.php:658
+msgid "Reset Values"
+msgstr "Reset-Werte"
+
+#: templates/template-frontend-tables.php:676
+msgid "Product variations"
+msgstr "Produktvariationen"
+
+#: templates/template-manage-schedule-tasks.php:17
+msgid "Scheduled Tasks "
+msgstr "Geplante Aufgaben"
+
+#: templates/template-manage-schedule-tasks.php:22
+msgid "Name"
+msgstr "Name"
+
+#: templates/template-manage-schedule-tasks.php:25
+msgid "Chosen Fields"
+msgstr "Auserwählte Felder"
+
+#: templates/template-manage-schedule-tasks.php:28
+msgid "Schedule (y-m-d)"
+msgstr "Fahrplan (y-m-d)"
+
+#: templates/template-manage-schedule-tasks.php:31
+msgid "Actions"
+msgstr "Aktionen"
+
+#: templates/template-scheduling-fields.php:8
+msgid "Schedule"
+msgstr "Zeitplan"
+
+#: templates/template-scheduling-fields.php:14
+msgid "Actions "
+msgstr "Aktionen"
+
+#: templates/template-scheduling-fields.php:17
+msgid ""
+"Choose when to perform the bulk edit operation. If you are choosing to bulk "
+"edit now, you can enable the checkbox to optionally save it as a job. For a "
+"later schedule, the job will be saved automatically"
+msgstr ""
+"Wählen Sie, wann die Schüttgutbearbeitungsoperation durchgeführt wird. Wenn "
+"Sie sich jetzt für eine Großbearbeitung entscheiden, können Sie das "
+"Kontrollkästchen aktivieren, um es optional als Auftrag zu speichern. Für "
+"einen späteren Zeitplan wird der Job automatisch gespeichert"
+
+#: templates/template-scheduling-fields.php:21
+msgid "Perform the Bulk Edit Now "
+msgstr "Führen Sie jetzt die Bulk-Bearbeitung aus"
+
+#: templates/template-scheduling-fields.php:22
+msgid "Schedule it for later "
+msgstr "Planen Sie es für später"
+
+#: templates/template-scheduling-fields.php:29
+msgid "Revert Last Update "
+msgstr "Letzte Aktualisierung rückt vor"
+
+#: templates/template-scheduling-fields.php:32
+msgid ""
+"Enable this Undo option to revert back your current update. But it will "
+"override your previous update."
+msgstr ""
+"Aktivieren Sie diese Undo-Option, um Ihr aktuelles Update rückgängig zu "
+"machen. Aber es wird Ihr vorheriges Update außer Kraft setzen."
+
+#: templates/template-scheduling-fields.php:35
+msgid "Enable Undo Update"
+msgstr "Undo-Update aktivieren"
+
+#: templates/template-scheduling-fields.php:40
+msgid "Schedule the Bulk Update on "
+msgstr "Planen Sie das Bulk-Update auf"
+
+#: templates/template-scheduling-fields.php:43
+msgid "Choose the time and date to perform the bulk edit operation."
+msgstr ""
+"Wählen Sie die Uhrzeit und das Datum, um die Massenbearbeitungsoperation "
+"durchzuführen."
+
+#: templates/template-scheduling-fields.php:67
+msgid "Revert the Values on (Optional) "
+msgstr "Die Werte rückgäntig (optional)"
+
+#: templates/template-scheduling-fields.php:70
+msgid ""
+"Choose a time and date to revert the edited values. Leave it as it is to not "
+"revert the values."
+msgstr ""
+"Wählen Sie eine Uhrzeit und ein Datum, um die bearbeiteten Werte rückgängig "
+"zu machen. Lassen Sie es so, wie es ist, die Werte nicht rückgängig zu "
+"machen."
+
+#: templates/template-scheduling-fields.php:94
+msgid "Enter Name (Optional) "
+msgstr "Namen eingeben (optional)"
+
+#: templates/template-scheduling-fields.php:97
+msgid "Enter a name for the bulk edit job"
+msgstr "Geben Sie einen Namen für den Schüttgutbearbeitungsauftrag ein"
+
+#: templates/template-scheduling-fields.php:105
+msgid "Create a Log File "
+msgstr "Eine Protokolldatei erstellen"
+
+#: templates/template-scheduling-fields.php:108
+msgid "Enable this field to create a log file for the bulk edit job"
+msgstr ""
+"Aktivieren Sie dieses Feld, um eine Protokolldatei für den "
+"Massenbearbeitungsauftrag zu erstellen"
+
+#: templates/template-scheduling-fields.php:117
+msgid "Finish"
+msgstr "Fertigstellen"
+
+#. Plugin Name of the plugin/theme
+msgid "ELEX Bulk Edit Products, Prices & Attributes for Woocommerce"
+msgstr "ELEX Bulk Edit Produkte, Preise & Attributen für den Holzhandel"
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://elextensions.com/plugin/bulk-edit-products-prices-attributes-for-"
+"woocommerce/"
+msgstr ""
+"https://elextensions.com/plugin/bulk-edit-products-prices-attributes-for-"
+"woocommerce/"
+
+#. Description of the plugin/theme
+msgid ""
+"Bulk Edit Products, Prices & Attributes for Woocommerce allows you to edit "
+"products prices and attributes as Bulk."
+msgstr ""
+"Bulk Edit Produkte, Preise & Attributen für Woocommerce ermöglicht es Ihnen, "
+"Produkte Preise und Attribute als Bulk zu bearbeiten."
+
+#. Author of the plugin/theme
+#, fuzzy
+msgid "ELEX"
+msgstr "ELEX"
+
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "http://elextensions.com/"
+msgstr "http://elextensions.com/"
