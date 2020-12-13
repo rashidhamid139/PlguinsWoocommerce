@@ -966,6 +966,8 @@ jQuery(function () {
       return "";
     }
   }
+  
+  
 
   jQuery("#attrib_name input[type='checkbox']").click(function () {
     var display = jQuery("#attrib_name input[type=checkbox]:checked").length;
@@ -974,6 +976,7 @@ jQuery(function () {
     } else {
       if (!jQuery("#attribute_value_select").length) {
         var dom = "<tr id='attribute_value_select'><td>" + js_obj.filter_attribute_value_title + "</td><td class='eh-content-table-middle'><span class='woocommerce-help-tip tooltip' data-tooltip='" + js_obj.filter_attribute_value_tooltip + "'></span></td><td><span class='select-eh' ><select data-placeholder='" + js_obj.filter_attribute_value_placeholder + "' multiple class='attribute-chosen' id='select_input_attributes'></select></span></td></tr>";
+        alert(dom)
         jQuery("#attribute_types").after(dom);
         jQuery(".attribute-chosen").chosen();
         jQuery(".tooltip").darkTooltip();
@@ -1015,7 +1018,8 @@ jQuery(function () {
     var display = jQuery("#attrib_name_and input[type=checkbox]:checked").length;
     if (display == 0) {
       jQuery("#attribute_value_select_and").remove();
-    } else {
+    }
+     else {
       if (!jQuery("#attribute_value_select_and").length) {
         var dom = "<tr id='attribute_value_select_and'><td>" + js_obj.filter_attribute_value_title + "</td><td class='eh-content-table-middle'><span class='woocommerce-help-tip tooltip' data-tooltip='" + js_obj.filter_attribute_value_tooltip + "'></span></td><td><span class='select-eh' ><select data-placeholder='" + js_obj.filter_attribute_value_placeholder + "' multiple class='attribute-chosen' id='select_input_attributes_and'></select></span></td></tr>";
         jQuery("#attribute_types_and").after(dom);
@@ -2238,6 +2242,7 @@ function clear_edit_data() {
 }
 
 function clear_filters() {
+  
   //var regex_default = ['g','m'];
   jQuery("#product_type").prop("selectedIndex", 0);
   jQuery("#elex_select_custom_attribute").prop("selectedIndex", 0);

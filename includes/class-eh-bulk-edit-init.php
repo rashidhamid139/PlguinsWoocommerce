@@ -76,7 +76,9 @@ class Eh_Bulk_Edit_Init extends Eh_Bulk_Edit_Products {
 		wp_register_script( 'eh-tooltip-jquery', plugins_url( '/assets/js/tooltip.js', dirname( __FILE__ ) ), array(), $woocommerce_version, false );
 		wp_enqueue_script( 'eh-tooltip-jquery' );
 		wp_register_script( 'eh-custom', plugins_url( '/assets/js/eh-custom.js', dirname( __FILE__ ) ), array(), $woocommerce_version, false );
+
 		$js_var = array(
+			'label_for_attribute_name' => 	__('Attribute Selected', 'eh_bulk_edit'),
 			'filter_attribute_value_title'           => __( 'Attribute Values (Existing)', 'eh_bulk_edit' ),
 			'filter_attribute_value_tooltip'         => __( 'Select the Attribute value(s) for which the filter has to be applied', 'eh_bulk_edit' ),
 			'filter_attribute_value_placeholder'     => __( 'Select Attributes Values', 'eh_bulk_edit' ),
@@ -129,6 +131,12 @@ class Eh_Bulk_Edit_Init extends Eh_Bulk_Edit_Products {
 		);
 		wp_localize_script( 'eh-custom', 'js_obj', $js_var );
 		wp_enqueue_script( 'eh-custom' );
+
+		// Seperate file for custom  javascript jquery code
+		wp_register_script( 'elex-bep-custom', plugins_url( '/assets/js/elex-bep-custom.js', dirname( __FILE__ ) ), array(), $woocommerce_version, false );
+		wp_localize_script( 'elex-bep-custom', 'elex_js_obj', $js_var );
+		wp_enqueue_script( 'elex-bep-custom' );
+
 	}
 
 	/**

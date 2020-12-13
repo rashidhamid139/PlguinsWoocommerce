@@ -41,8 +41,9 @@ switch ( 'PREMIUM' ) {
 		$base     = 'basic';
 		break;
 }
-// Enter your plugin unique option name below $option_name variable.
 $option_name = 'eh_bulk_edit_pack';
+
+// Enter your plugin unique option name below $option_name variable.
 if ( get_option( $option_name ) === $conflict ) {
 	add_action( 'admin_notices', 'eh_wc_admin_notices', 99 );
 	deactivate_plugins( plugin_basename( __FILE__ ) );
@@ -76,6 +77,7 @@ if ( get_option( $option_name ) === $conflict ) {
 		);}
 	return;
 } else {
+
 	update_option( $option_name, $base );
 	register_deactivation_hook( __FILE__, 'eh_bulk_edit_deactivate_work' );
 	/**  Enter your plugin unique option name below update_option function. */

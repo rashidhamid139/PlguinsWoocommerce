@@ -29,6 +29,7 @@ add_action( 'wp_ajax_elex_bep_revert_job', 'eh_bep_undo_html_maker' );
 add_action( 'wp_ajax_elex_bep_delete_job', 'elex_bep_delete_job_callback' );
 add_action( 'wp_ajax_elex_bep_cancel_schedule', 'elex_bep_cancel_schedule_callback' );
 add_action( 'wp_ajax_elex_variations_attribute_change', 'elex_variations_attribute_change_callback' );
+add_action( 'wp_ajax_elex_bep_get_attribute_terms', 'elex_bep_get_attribute_terms');
 add_action( 'wp_ajax_elex_bep_update_checked_status', 'elex_bep_update_checked_status_callback' );
 
 /** Filter Checkbox Handler. */
@@ -194,6 +195,7 @@ function eh_bep_get_attributes_action_callback() {
 		$return .= "<option value=\"'pa_" . $attribute_name . ':' . $value->slug . "'\">" . $value->name . '</option>';
 	}
 	$return .= '</optgroup>';
+	error_log( print_r($return, TRUE ));
 	echo filter_var( $return );
 	exit;
 }
@@ -513,6 +515,7 @@ function eh_bep_undo_update_callback( $sch_jobs = '' ) {
 		}
 	}
 	foreach ( $product_data as $pid => $current_product ) {
+
 		$product = wc_get_product( $current_product['id'] );
 		if ( ! empty( $product ) && $product->is_type( 'variation' ) ) {
 			$parent_id = ( WC()->version < '2.7.0' ) ? $product->parent->id : $product->get_parent_id();
@@ -1288,6 +1291,7 @@ function eh_bep_update_product_callback( $sch_jobs = '' ) {
 
 	$sale_warning = array();
 	foreach ( $selected_products as $pid => $temp ) {
+		
 		$pid                        = $temp;
 		$collect_product_data       = array();
 		$collect_product_data['id'] = $pid;
@@ -1343,6 +1347,27 @@ function eh_bep_update_product_callback( $sch_jobs = '' ) {
 		$temp      = wc_get_product( $pid );
 		$parent    = $temp;
 		$parent_id = $pid;
+		#############
+		if ( $temp->is_type( 'variable' ) ){
+
+			$variation_data =  array(
+				'attributes' => array(
+					'size1'  => array("M", "L"),
+					'color1' => array("G", "Y"),
+				),
+				'sku'           => '',
+				'regular_price' => '22.00',
+				'sale_price'    => '',
+				'stock_qty'     => 10,
+			);
+			
+			include_once 'class-eh-bulk-edit-create-variation.php';
+			// elex_bep_create_product_variation($pid, $variation_data );
+			include_once "class-bulk-edit-crate-variation-2.php";
+			$variation_id = elex_bep_create_variation( $pid, array());
+			error_log( "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+		}
+		############
 		if ( ! empty( $temp ) && $temp->is_type( 'variation' ) ) {
 			$parent_id = ( WC()->version < '2.7.0' ) ? $temp->parent->id : $temp->get_parent_id();
 			$parent    = wc_get_product( $parent_id );
@@ -4841,3 +4866,45 @@ function eh_bep_update_custom_meta( $pid, $val ) {
 	return $undo_val;
 }
 
+
+
+
+
+
+
+function elex_bep_get_attribute_terms() {
+	check_ajax_referer( 'ajax-eh-bep-nonce', '_ajax_eh_bep_nonce' );
+	$attribute_name     = isset( $_POST['attrib'] ) ? sanitize_text_field( $_POST['attrib'] ) : '';
+	$selected_from_attr = '';
+	$selected_to_attr   = '';
+	if ( isset( $_POST['attr_edit'] ) ) {
+		$attr_detail_arr    = explode( ',', $attribute_name );
+		$from_attr          = $attr_detail_arr[0];
+		$to_attr            = $attr_detail_arr[1];
+		$from_attr_arr      = explode( ':', $from_attr );
+		$to_attr_arr        = explode( ':', $to_attr );
+		$attribute_name     = $to_attr_arr[0];
+		$selected_from_attr = $from_attr_arr[1];
+		$selected_to_attr   = $to_attr_arr[1];
+	}
+
+	$cat_args   = array(
+		'hide_empty' => false,
+		'order'      => 'ASC',
+	);
+	$attributes = wc_get_attribute_taxonomies();
+	foreach ( $attributes as $key => $value ) {
+		if ( $attribute_name == $value->attribute_name ) {
+			$attribute_name  = $value->attribute_name;
+			$attribute_label = $value->attribute_label;
+		}
+	}
+	$attribute_value = get_terms( 'pa_' . $attribute_name, $cat_args );
+	$return_array = array();
+	foreach ( $attribute_value as $key => $value ) {
+		error_log( $value->name );
+		array_push( $return_array, $value->name );
+	}
+	error_log( print_r( $return_array, TRUE ));
+	die( wp_json_encode( $return_array ) );
+}

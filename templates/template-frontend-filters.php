@@ -284,6 +284,7 @@ require EH_BEP_DIR . 'includes/wf_api_manager/html/html-wf-activation-window.php
 				?>
 			</td>
 		</tr>
+		
 		<tr id='attribute_types_and'>
 			<td class='eh-content-table-left'>
 				<?php esc_html_e( 'Product Attributes (Group with AND)', 'eh_bulk_edit' ); ?>

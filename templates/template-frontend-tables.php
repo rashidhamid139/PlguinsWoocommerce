@@ -659,6 +659,58 @@ function eh_bep_process_edit() {
 			<tr id="variations_attribute_rows">
 			</tr>
 		</table>
+		<table class='eh-edit-table' id='add_variations' style="display:none">
+			<tr>
+				<td class='eh-edit-tab-table-left'>
+					<?php esc_html_e( 'Select Attribute', 'eh_bulk_edit' ); ?>
+				</td>
+				<td class='eh-edit-tab-table-middle'>
+					<span class='woocommerce-help-tip tooltip' data-tooltip='<?php esc_html_e( 'Select the attribute and specify the attribute values to be used for variations.', 'eh_bulk_edit' ); ?>'></span>
+				</td>
+				<td class= 'eh-edit-tab-table-input-td'>
+					<?php
+					if ( count( $attributes ) > 0 ) {
+						foreach ( $attributes as $key => $value ) {
+							// $select_box = "<div class='chosen-container chosen-container-multi' style='width: 100px;' title='' id='add_attribute_multiple_". $value->attribute_name . "'>";
+							// $select_box .= "<ul class='chosen-choices'><li class='search-field'><input type='text' value='Select Product Types' class='default' autocomplete='off' style='width: 158px;'></li></ul>";
+							// $select_box .= "<div class='chosen-drop' id='ullist_".$value->attribute_name. "'><ul class='chosen-results'></ul></div></div>";
+							echo filter_var( "<br><span id='vari_attribu_add_variation' class='checkbox-eh'><input type='checkbox' name='vari_attribu_name' value='" . $value->attribute_name . "' id='" . $value->attribute_name . "'>" . $value->attribute_label . '</span><br>' );
+							echo filter_var( "<select class='chosen chosen-results' data-order='true' name='multiselect[]' id='multiselect_". $value->attribute_name . "' multiple='true'><select>" );
+
+						
+						}
+					} else {
+						echo "<span id='attribu_name' class='checkbox-eh'>No attributes found.</span>";
+					}
+					?>
+				</td>
+			</tr>
+			<tr id="variations_attribute_rows_for_variations">
+			</tr>
+		</table>
+		<table class="eh-edit-table" id="add_variation_attr1">
+			<tr id="attribute_types_add_variation">
+				<td class='eh-edit-tab-table-left'>
+					<?php esc_html_e( 'Select Attribute', 'eh_bulk_edit' ); ?>
+				</td>
+				<td class='eh-edit-tab-table-middle'>
+					<span class='woocommerce-help-tip tooltip' data-tooltip='<?php esc_html_e( 'Select the attribute and specify the attribute values to be used for variations.', 'eh_bulk_edit' ); ?>'></span>
+				</td>
+				<td>
+				<?php
+					if ( count( $attributes ) > 0 ) {
+						foreach ( $attributes as $key => $value ) {
+							echo filter_var( "<br><span id='vari_attribu_add_variation1' class='checkbox-eh'><input type='checkbox' name='vari_attribu_name' value='" . $value->attribute_name . "' id='" . $value->attribute_name . "'>" . $value->attribute_label . '</span><br>' );
+						}
+					} else {
+						echo "<span id='attribu_nvari_attribu_add_variation1ame' class='checkbox-eh'>No attributes found.</span>";
+					}
+				?>
+				</td>
+			</tr>
+		</table>
+
+		
 		<h2>
 			<?php esc_html_e( 'Categories', 'eh_bulk_edit' ); ?>
 		</h2>
