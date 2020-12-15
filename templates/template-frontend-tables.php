@@ -700,7 +700,7 @@ function eh_bep_process_edit() {
 				<?php
 					if ( count( $attributes ) > 0 ) {
 						foreach ( $attributes as $key => $value ) {
-							echo filter_var( "<br><span id='vari_attribu_add_variation1' class='checkbox-eh'><input type='checkbox' name='vari_attribu_name' value='" . $value->attribute_name . "' id='" . $value->attribute_name . "'>" . $value->attribute_label . '</span><br>' );
+							echo filter_var( "<span id='vari_attribu_add_variation1' class='checkbox-eh cat-checkbox-button'><input type='checkbox' name='vari_attribu_name' value='" . $value->attribute_name . "' id='" . $value->attribute_name . "'>" . $value->attribute_label . '</span>' );
 						}
 					} else {
 						echo "<span id='attribu_nvari_attribu_add_variation1ame' class='checkbox-eh'>No attributes found.</span>";
