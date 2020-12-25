@@ -1366,6 +1366,8 @@ function eh_bep_update_product_callback( $sch_jobs = '' ) {
 			// elex_bep_create_product_variation($pid, $variation_data );
 			include_once "class-bulk-edit-crate-variation-2.php";
 			$variation_id = elex_bep_create_variation( $pid, array());
+			include_once 'class-bep-get-terms.php';
+			// elex_bep_get_attribute_and_terms();
 		}
 		############
 		if ( ! empty( $temp ) && $temp->is_type( 'variation' ) ) {

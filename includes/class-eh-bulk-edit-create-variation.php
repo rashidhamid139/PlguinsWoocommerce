@@ -8,6 +8,7 @@
  * @param array $variation_data | The data to insert in the product.
  */
 
+//Create a product variation 
 function elex_bep_create_product_variation( $product_id, $variation_data ) {
     //Get varaible product object parent
     $product = wc_get_product( $product_id );

@@ -4,99 +4,94 @@ function elex_bep_create_variation( $parent_product_id, $attribute_array ){
     
     //Create main product
     $variable_product_object = new WC_Product_Variable( $parent_product_id );
+    $attr_data = array(
+            'color'=> array( 'G', 'B', 'Y'),
+            'size'=> array( 'XX', 'XXL', 'L')
+    );
+    
+    $attribute_array = array();
 
-    //Create the attribute object
-    $attribute = new WC_Product_Attribute();
 
-    //pa_size tax id
-    $attribute->set_id( 0 ); // -> SET to 0
-
-    //pa_size slug
-    $attribute->set_name( 'size' ); // -> removed 'pa_' prefix
-
-    //Set terms slugs
-    $attribute->set_options( array(
-        'M',
-        'L'
-    ) );
-
-    $attribute->set_position( 0 );
-    //If enabled
-    $attribute->set_visible( 1 );
-
-    //If we are going to use attribute in order to generate variations
-    $attribute->set_variation( 1 );
-
-    $attribute2 = new WC_Product_Attribute();
-
-    //pa_size tax id
-    $attribute2->set_id( 0 ); // -> SET to 0
-
-    //pa_size slug
-    $attribute2->set_name( 'color' ); // -> removed 'pa_' prefix
-
-    //Set terms slugs
-    $attribute2->set_options( array(
-        'GG',
-        'YY'
-    ) );
-
-    $attribute2->set_position( 0 );
-
-    //If enabled
-    $attribute2->set_visible( 1 );
-
-    //If we are going to use attribute in order to generate variations
-    $attribute2->set_variation( 1 );
-    $variable_product_object->set_attributes(array($attribute, $attribute2));
+    foreach( $attr_data as $term=> $option ){
+        $attribute  = new WC_Product_Attribute();
+        $attribute->set_id( 0 );
+        $attribute->set_name( $term );
+        $attribute->set_options( $option );
+        $attribute->set_position( 0 );
+        $attribute->set_visible( 1 );
+        $attribute->set_variation( 1 );
+        array_push( $attribute_array, $attribute );
+    }
+    $variable_product_object->set_attributes( $attribute_array );
     $id = $variable_product_object->save();
-    ###
+    error_log( $id );
+    elex_bep_create_variation_from_attributes( $parent_product_id, $attr_data );
 
-        $attr_terms1 = array(
-            "GG", "YY"
-        );
-        $attr_terms2 = array(
-            "M", "L"
-        );
-
-        for ($x = 0; $x < count($attr_terms1); $x++) {
-            for ($y = 0; $y < count($attr_terms2); $y++) {
-                $variation = new WC_Product_Variation();
-                // $variation->set_regular_price(10);
-                $variation->set_parent_id($id);
-                
-                //Set attributes requires a key/value containing
-                // tax and term slug
-                $variation->set_attributes(array(
-                    'size' => $attr_terms2[$y], // -> removed 'pa_' prefix
-                    'color' =>  $attr_terms1[$x]
-                ));
-                
-                //Save variation, returns variation id
-                $variation->save(); 
-              }
-          }
-
-
-    ###
-
-
-    //Save main product to get its id
-    // $id = $variable_product_object->save();
-    // $variation = new WC_Product_Variation();
-    // // $variation->set_regular_price(10);
-    // $variation->set_parent_id($id);
-    
-    // //Set attributes requires a key/value containing
-    // // tax and term slug
-    // $variation->set_attributes(array(
-    //     'size' => array("M", "L"), // -> removed 'pa_' prefix
-    //     'color' =>  array('GG', 'YY')
-    // ));
-    
-    // //Save variation, returns variation id
-    // $variation->save();
-    
     return;
     
+}
+
+
+
+
+function elex_bep_create_variation_from_attributes( $product_id, $variation_data ) {
+    //Get varaible product object parent
+    $product = wc_get_product( $product_id );
+    //
+    $variation_post = array(
+        'post_title' => $product->get_name(),
+        'post_name' => 'product-'.$product_id.'-varation',
+        'post_status' => 'publish',
+        'post_parent' => $product_id,
+        'post_type' => 'product_variation',
+        'guid' => $product->get_permalink()
+    );
+
+    $variation_id = wp_insert_post( $variation_post );
+    $variation = new WC_Product_Variation( $variation_id );
+    error_log( $variation_id );
+
+    foreach ($variation_data as $attribute => $term_names )
+    {
+        $taxonomy = 'pa_'.$attribute; // The attribute taxonomy
+        error_log( taxonomy_exists( $taxonomy ));
+        // If taxonomy doesn't exists we create it (Thanks to Carl F. Corneil)
+        if( ! taxonomy_exists( $taxonomy ) ){ 
+            register_taxonomy(
+                $taxonomy, 'product_variation',
+                array(
+                    'hierarchical' => false,
+                    'label' => ucfirst( $attribute ),
+                    'query_var' => true,
+                    'rewrite' => array( 'slug' => sanitize_title($attribute) ), // The base slug
+                )
+            );
+        }
+
+        foreach( $term_names as $key=> $term_name  ){
+            error_log( $key. '   '. $term_name );
+            // Check if the Term name exist and if not we create it.
+            if( ! term_exists( $term_name, $taxonomy ) ){
+                wp_insert_term( $term_name, $taxonomy ); // Create the term
+            }
+            $term_slug = get_term_by('name', $term_name, $taxonomy )->slug; // Get the term slug
+            error_log( print_r($term_slug, TRUE ));
+
+            // // Get the post Terms names from the parent variable product.
+            $post_term_names =  wp_get_post_terms( $product_id, $taxonomy, array('fields' => 'names') );
+
+            // // Check if the post term exist and if not we set it in the parent variable product.
+            if( ! in_array( $term_name, $post_term_names ) )
+                wp_set_post_terms( $product_id, $term_name, $taxonomy, true );
+
+            // // Set/save the attribute data in the product variation
+            update_post_meta( $variation_id, 'attribute_'.$taxonomy, $term_slug );
+        }
+    }
+    $variation->set_manage_stock(false);
+
+    $variation->set_weight(''); // weight (reseting)
+    
+    error_log( print_r( $variation, TRUE ));
+    $variation->save(); 
 }
